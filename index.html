@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller 1</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <style>
+        thead{
+            background-color: black;
+            color:white;
+        }
+        .container1{
+            border: 2px solid black;
+            padding: 30px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Maria Paula Tellez</h1>
+                    <img class="img-fluid max-width: 100% height: auto" src="./foto1.jpeg" alt="Avatar">`
+                    <div class="card">
+                        <h2 class="card-title">Datos Personales</h2>
+                        <table class = "table" id = "student">                        
+                        </table>
+                    </div>
+            </div>
+                <div class="col">
+                    <div class="container1">
+                    <h2>Cursos Actuales</h2>
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                          <div class="col">
+                              <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                          </div>
+                          <div class="col">
+                              <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                          </div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="search-boxmin" placeholder="Filtrar por credito maximo">
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="search-boxmax" placeholder="Filtrar por credito minimo">
+                        </div>
+                        <div class="col">
+                            <button type="button" id="button-filterCreditMax" class="btn btn-success">Aplicar</button>
+                        </div>
+                        
+                      </div>
+                    </form>
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                           <tr>
+                              <th>Curso</th>
+                              <th>Profesor</th>
+                              <th>Créditos</th>
+                           </tr>
+                        </thead>
+                        <tbody id="courses">
+                        </tbody>
+                    </table>
+                    <div class="row justify-content-end">
+                        <h5 class="col-4"><strong>Total Créditos:</strong></h5>
+                        <h5 class="col-4" id="total-credits"><strong></strong></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/course.js" ></script>
+    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/student.js"></script>
+    <script type="module" src="./scripts/dataStudent.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+    </body>
+</html>
